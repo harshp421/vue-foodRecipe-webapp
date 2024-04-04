@@ -48,15 +48,16 @@ app.get('/api/recipes', (req, res) => {
              // Construct the file path to data.json within the public folder
              const jsonFilePath = path.join(publicFolderPath, 'data.json');
             // Write data to data.json file
-            fs.writeFile(jsonFilePath, JSON.stringify(recipes, null, 2), 'utf8', err => {
-                if (err) {
-                    console.error('Error writing to data.json file:', err);
-                    res.status(500).json({ error: 'Internal Server Error' });
-                } else {
-                    console.log('Data saved to data.json file');
-                    res.status(200).json({ message: 'Data saved to data.json file',recipes:recipes });
-                }
-            });
+            // fs.writeFile(jsonFilePath, JSON.stringify(recipes, null, 2), 'utf8', err => {
+            //     if (err) {
+            //         console.error('Error writing to data.json file:', err);
+            //         res.status(500).json({ error: 'Internal Server Error' });
+            //     } else {
+            //         console.log('Data saved to data.json file');
+                    
+            //     }
+            // });
+            res.status(200).json({ message: 'Data saved to data.json file',recipes:recipes });
         })
         .catch(err => {
             console.error('Error fetching recipes from MongoDB:', err);
