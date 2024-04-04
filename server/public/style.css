@@ -1,0 +1,161 @@
+.container {
+    width: 100%; 
+    margin: 0px;
+    padding: 0px;  
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    background-color: #fad9d5;
+    display:grid;
+}
+
+header {
+    color: black;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 25px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-image: linear-gradient(#f8cecc, #ea6b66);
+    padding: 10px;
+}
+
+.img-div{
+    float: left;  
+}
+
+#pic{
+    height: 180px;
+    width: 180px;
+    padding-left: 20px;
+    object-fit: cover;   
+}
+
+#d1{
+    margin-right:20px;
+    font-size: 12px;
+    text-align:center;
+    margin-left: 34px;   
+}
+
+#d2{
+    margin-right: 20px;
+    text-align: center;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    font-size: 12px;   
+}
+
+#d3{
+    color:#0dbfaa;
+    text-decoration: #0dbfaa;
+    text-decoration-line: underline;
+    font-size: 20px;
+    margin-left:35px;
+    margin-right:150px;
+    margin-top: 10px;
+    padding-top:10px;
+    text-align: justify;
+}
+
+#d4{
+    font-size: 20px;
+    margin:10px 25px;
+    margin-bottom: 40px;
+    text-align: justify;
+    padding-bottom: 35px;
+}
+
+article h2 {
+    font-size:20px;
+    margin: 0px 25px;
+    border: 2px solid #ea6b66;
+    text-align: center;
+    line-height: 40px; 
+    background: linear-gradient(#f8cecc, #ea6b66);
+}
+
+article h3 {
+    
+    margin: 10px 25px;
+   
+}
+
+article p {
+    font-size: 20px;
+    margin:  25px;
+    text-align: justify;
+}
+
+footer {
+    color: black;
+    padding: 10px ;
+    margin:0px 5px;
+    text-align: center;
+    border:1px solid #996185;
+    background:linear-gradient(#e6d0de,#d5739d);
+}
+
+footer a {
+    text-decoration:none;
+   
+    font-size:35px;
+    padding: 10px;
+}
+.fa-youtube{
+    color:#ff2445;
+}
+
+.fa-linkedin-in{
+    color:#006391;
+}
+
+.fa-github{
+    color:black;
+}
+
+.fa-square-twitter{
+    color:#277cc2;
+}
+
+.fa-square-facebook{
+    color:#031365;
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    #d4{
+       
+        font-size:15px;
+    }
+    #d3{
+        margin-top:0px;
+        padding-top:0px;
+    }
+}
+
